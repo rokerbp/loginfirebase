@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Social Login</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+
+    <div class="container py-5">
+        <h1>Inicia <strong>Sesión</strong> </h1>
+        <button class="btn btn-info" id="login">Iniciar con Google</button>
+        <div id="bienvenido">
+            
+        </div>
+        <hr>
+        <h3>Usuarios <strong>Registrados</strong></h3>
+        <div class="row my-3">
+    
+            <div id="root" class="card-deck">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyChc-TsChzw86RWHHJr6AB1KDzCwo3E2pk",
+            authDomain: "ejemplo-firebase-login.firebaseapp.com",
+            databaseURL: "https://ejemplo-firebase-login.firebaseio.com",
+            projectId: "ejemplo-firebase-login",
+            storageBucket: "ejemplo-firebase-login.appspot.com",
+            messagingSenderId: "110940654311",
+            appId: "1:110940654311:web:ab0feedaf35e9e6fe13042",
+            measurementId: "G-VNMPHLZHR7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+    <script src="app.js"></script>
+</body>
+</html>
